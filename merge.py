@@ -5,40 +5,56 @@ group1 = [
 #   r"C:/Users/pract/Desktop/Elephant/Background/cosmos.png",
 #   r"C:/Users/pract/Desktop/Elephant/Background/jungle.png",
 #   r"C:/Users/pract/Desktop/Elephant/Background/sky.png"
-"wall1.png",
-"wall2.png",
-"wall3.png",
-"wall4.png",
+# "wall1.png",
+# "wall2.png",
+# "wall3.png",
+# "wall4.png",
+"wall.png",
+"wall.png",
+"wall.png",
+"wall.png",
 ]
 group2 = [
 #   r"C:/Users/pract/Desktop/Elephant/Body/body_base.png",
 #   r"C:/Users/pract/Desktop/Elephant/Body/body_black.png",
 #   r"C:/Users/pract/Desktop/Elephant/Body/body_gold.png",
 #   r"C:/Users/pract/Desktop/Elephant/Body/body_skin.png"
-"wall5.png",
-"wall6.png",
-"wall7.png",
-"wall8.png",
+# "wall5.png",
+# "wall6.png",
+# "wall7.png",
+# "wall8.png",
+"wall.png",
+"wall.png",
+"wall.png",
+"wall.png",
 ]
 group3 = [
 #   r"C:/Users/pract/Desktop/Elephant/Head/head_base.png",
 #   r"C:/Users/pract/Desktop/Elephant/Head/head_spray_1.png",
 #   r"C:/Users/pract/Desktop/Elephant/Head/head_spray_2.png",
 #   r"C:/Users/pract/Desktop/Elephant/Head/head_spray_3.png" #could add head_spray4
-"wall9.png",
-"wall10.png",
-"wall11.png",
-"wall12.png",
+# "wall9.png",
+# "wall10.png",
+# "wall11.png",
+# "wall12.png",
+"wall.png",
+"wall.png",
+"wall.png",
+"wall.png",
 ]
 group4 = [
 #   r"C:/Users/pract/Desktop/Elephant/Trunk/trunk_axe.png",
 #   r"C:/Users/pract/Desktop/Elephant/Trunk/trunk_base.png",
 #   r"C:/Users/pract/Desktop/Elephant/Trunk/trunk_knife.png",
 #   r"C:/Users/pract/Desktop/Elephant/Trunk/trunk_laser.png"
-"wall13.png",
-"wall14.png",
-"wall15.png",
-"wall16.png",
+# "wall13.png",
+# "wall14.png",
+# "wall15.png",
+# "wall16.png",
+"wall.png",
+"wall.png",
+"wall.png",
+"wall.png",
 ]
 
 group5 = [
@@ -46,17 +62,23 @@ group5 = [
 #   r"C:/Users/pract/Desktop/Elephant/Tusks/tusks_broken.png",
 #   r"C:/Users/pract/Desktop/Elephant/Tusks/tusks_golden.png",
 #   r"C:/Users/pract/Desktop/Elephant/Tusks/tusks_large.png"
-"wall17.png",
-"wall18.png",
-"wall19.png",
-"wall20.png",
+# "wall17.png",
+# "wall18.png",
+# "wall19.png",
+# "wall20.png",
+"wall.png",
+"wall.png",
+"wall.png",
+"wall.png",
 ]
 
 group6 = [
 # r"C:/Users/pract/Desktop/Elephant/Eyes/blue_eye_elephant.png",
 #   r"C:/Users/pract/Desktop/Elephant/Eyes/red_eye_elephant.png"
-"wall1.png",
-"wall1.png",
+# "wall1.png",
+# "wall1.png",
+"vall.png",
+"vall.png",
 ]
 counter = 0
 
