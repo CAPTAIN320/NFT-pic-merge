@@ -5,14 +5,18 @@ group1 = [
 #   r"C:/Users/pract/Desktop/Elephant/Background/cosmos.png",
 #   r"C:/Users/pract/Desktop/Elephant/Background/jungle.png",
 #   r"C:/Users/pract/Desktop/Elephant/Background/sky.png"
-# "wall1.png",
+#" "wall1.png",
 # "wall2.png",
 # "wall3.png",
 # "wall4.png",
-"wall.png",
-"wall.png",
-"wall.png",
-"wall.png",
+# "wall.png",
+# "wall.png",
+# "wall.png",
+# "wall.png",
+"roof.png",
+"roof.png",
+"roof.png",
+"roof.png",
 ]
 group2 = [
 #   r"C:/Users/pract/Desktop/Elephant/Body/body_base.png",
@@ -23,10 +27,14 @@ group2 = [
 # "wall6.png",
 # "wall7.png",
 # "wall8.png",
-"wall.png",
-"wall.png",
-"wall.png",
-"wall.png",
+# "wall.png",
+# "wall.png",
+# "wall.png",
+# "wall.png",
+"roof.png",
+"roof.png",
+"roof.png",
+"roof.png",
 ]
 group3 = [
 #   r"C:/Users/pract/Desktop/Elephant/Head/head_base.png",
@@ -37,10 +45,14 @@ group3 = [
 # "wall10.png",
 # "wall11.png",
 # "wall12.png",
-"wall.png",
-"wall.png",
-"wall.png",
-"wall.png",
+# "wall.png",
+# "wall.png",
+# "wall.png",
+# "wall.png",
+"castle wall.png",
+"castle wall.png",
+"castle wall.png",
+"castle wall.png",
 ]
 group4 = [
 #   r"C:/Users/pract/Desktop/Elephant/Trunk/trunk_axe.png",
@@ -51,10 +63,14 @@ group4 = [
 # "wall14.png",
 # "wall15.png",
 # "wall16.png",
-"wall.png",
-"wall.png",
-"wall.png",
-"wall.png",
+# "wall.png",
+# "wall.png",
+# "wall.png",
+# "wall.png",
+"castle wall.png",
+"castle wall.png",
+"castle wall.png",
+"castle wall.png",
 ]
 
 group5 = [
@@ -66,10 +82,14 @@ group5 = [
 # "wall18.png",
 # "wall19.png",
 # "wall20.png",
-"wall.png",
-"wall.png",
-"wall.png",
-"wall.png",
+# "wall.png",
+# "wall.png",
+# "wall.png",
+# "wall.png",
+"castle base lines.png",
+"castle base lines.png",
+"castle base lines.png",
+"castle base lines.png",
 ]
 
 group6 = [
@@ -77,8 +97,8 @@ group6 = [
 #   r"C:/Users/pract/Desktop/Elephant/Eyes/red_eye_elephant.png"
 # "wall1.png",
 # "wall1.png",
-"vall.png",
-"vall.png",
+"birds.png",
+"clouds.png",
 ]
 counter = 0
 
