@@ -31,19 +31,19 @@ group4 = [
 ]
 
 group5 = [
-  "./assets/castle wall/castle wall1.png",
-  "./assets/castle wall/castle wall2.png",
-  "./assets/castle wall/castle wall3.png",
-  "./assets/castle wall/castle wall4.png",
-  "./assets/castle wall/castle wall5.png",
-]
-
-group6 = [
   "./assets/castle roof/castle roof1.png",
   "./assets/castle roof/castle roof2.png",
   "./assets/castle roof/castle roof3.png",
   "./assets/castle roof/castle roof4.png",
   "./assets/castle roof/castle roof5.png",
+]
+
+group6 = [
+  "./assets/castle wall/castle wall1.png",
+  "./assets/castle wall/castle wall2.png",
+  "./assets/castle wall/castle wall3.png",
+  "./assets/castle wall/castle wall4.png",
+  "./assets/castle wall/castle wall5.png",
 ]
 
 group7 = [
