@@ -1,4 +1,7 @@
+import random
 from PIL import Image
+import numpy as np
+
 
 group1 = [
   "./assets/sky/sky1.png",
@@ -15,11 +18,6 @@ group2 = [
   "./assets/sun/sun5.png",
 ]
 group3 = [
-  "./assets/mountains/mountains1.png",
-  "./assets/mountains/mountains2.png",
-  "./assets/mountains/mountains3.png",
-  "./assets/mountains/mountains4.png",
-  "./assets/mountains/mountains5.png",
   "./assets/mountains/mountains6.png",
   "./assets/mountains/mountains7.png",
   "./assets/mountains/mountains8.png",
@@ -69,7 +67,11 @@ group9 = [
 
 counter = 0
 
+randnums = np.random.randint(1,5,1)
+print(randnums)
+
 def createImage(a,b,c,d,e,f,g,h,i,counter):
+  print(a,b,c,d,e,f,g,h,i,counter)
   first = group1[a]
   second = group2[b]
   third = group3[c]
@@ -107,18 +109,33 @@ def createImage(a,b,c,d,e,f,g,h,i,counter):
   name = "merged/" + str(counter) + ".png"
   intermediate8.save(name)
 
+count = 0
+while count < 10000:
+  a = np.random.randint(0,5,1)[0]
+  b = np.random.randint(0,5,1)[0]
+  c = np.random.randint(0,5,1)[0]
+  d = 0 # np.random.randint(1,1,1)[0]
+  e = np.random.randint(0,5,1)[0]
+  f = np.random.randint(0,5,1)[0]
+  g = np.random.randint(0,5,1)[0]
+  h = np.random.randint(0,6,1)[0]
+  i = 0 # np.random.randint(1,1,1)[0]
+  createImage(a,b,c,d,e,f,g,h,i,counter)
+  counter = counter + 1
+  count = count + 1
 
-for a in range(5):
-  for b in range(5):
-    for c in range(10):
-      for d in range(1):
-        for e in range(5):
-          for f in range(5):
-            for g in range(5):
-              for h in range(6):
-                for i in range(1):
-                  createImage(a,b,c,d,e,f,g,h,i,counter)
-                  counter = counter + 1
+
+# for a in range(5):
+#   for b in range(5):
+#     for c in range(5):
+#       for d in range(1):
+#         for e in range(5):
+#           for f in range(5):
+#             for g in range(5):
+#               for h in range(6):
+#                 for i in range(1):
+#                   createImage(a,b,c,d,e,f,g,h,i,counter)
+#                   counter = counter + 1
 
 
 
