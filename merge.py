@@ -65,13 +65,10 @@ group9 = [
   "./assets/birds/birds1.png",
 ]
 
-counter = 0
-
-randnums = np.random.randint(1,5,1)
-print(randnums)
+# counter = 0
 
 def createImage(a,b,c,d,e,f,g,h,i,counter):
-  print(a,b,c,d,e,f,g,h,i,counter)
+  # print(a,b,c,d,e,f,g,h,i,counter)
   first = group1[a]
   second = group2[b]
   third = group3[c]
@@ -104,12 +101,11 @@ def createImage(a,b,c,d,e,f,g,h,i,counter):
   intermediate8 = Image.alpha_composite(intermediate7,image09)
 
 
-
-
   name = "merged/" + str(counter) + ".png"
   intermediate8.save(name)
 
 count = 0
+hash_table_dict = {}
 while count < 10000:
   a = np.random.randint(0,5,1)[0]
   b = np.random.randint(0,5,1)[0]
@@ -120,9 +116,18 @@ while count < 10000:
   g = np.random.randint(0,5,1)[0]
   h = np.random.randint(0,6,1)[0]
   i = 0 # np.random.randint(1,1,1)[0]
-  createImage(a,b,c,d,e,f,g,h,i,counter)
-  counter = counter + 1
-  count = count + 1
+  
+  current_string = str(a)+str(b)+str(c)+str(d)+str(e)+str(f)+str(g)+str(h)+str(i)
+  if current_string not in hash_table_dict:
+    hash_table_dict[current_string] = count
+    createImage(a,b,c,d,e,f,g,h,i,count)
+    # counter = counter + 1
+    count = count + 1
+  else:
+    print("This already f'ing exist")
+    print("ID: ", current_string, "File no.: ", hash_table_dict[current_string])
+
+print(hash_table_dict)
 
 
 # for a in range(5):
