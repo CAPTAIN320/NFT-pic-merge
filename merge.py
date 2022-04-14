@@ -127,7 +127,7 @@ while count < 10000:
     print("This already f'ing exist")
     print("ID: ", current_string, "File no.: ", hash_table_dict[current_string])
 
-print(hash_table_dict)
+# print(hash_table_dict)
 
 
 # for a in range(5):
