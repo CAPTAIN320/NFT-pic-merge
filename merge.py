@@ -1,68 +1,68 @@
-import random
 from PIL import Image
 import numpy as np
+import pandas as pd
 
 
 group1 = [
+  "./assets/sky/sky0.png",
   "./assets/sky/sky1.png",
   "./assets/sky/sky2.png",
   "./assets/sky/sky3.png",
   "./assets/sky/sky4.png",
-  "./assets/sky/sky5.png",
 ]
 group2 = [
+  "./assets/sun/sun0.png",
   "./assets/sun/sun1.png",
   "./assets/sun/sun2.png",
   "./assets/sun/sun3.png",
   "./assets/sun/sun4.png",
-  "./assets/sun/sun5.png",
 ]
 group3 = [
-  "./assets/mountains/mountains6.png",
-  "./assets/mountains/mountains7.png",
-  "./assets/mountains/mountains8.png",
-  "./assets/mountains/mountains9.png",
-  "./assets/mountains/mountains10.png",
+  "./assets/mountains/mountains0.png",
+  "./assets/mountains/mountains1.png",
+  "./assets/mountains/mountains2.png",
+  "./assets/mountains/mountains3.png",
+  "./assets/mountains/mountains4.png",
 ]
 group4 = [
-  "./assets/clouds/clouds1.png",
+  "./assets/clouds/clouds0.png",
 ]
 
 group5 = [
+  "./assets/castle roof/castle roof0.png",
   "./assets/castle roof/castle roof1.png",
   "./assets/castle roof/castle roof2.png",
   "./assets/castle roof/castle roof3.png",
   "./assets/castle roof/castle roof4.png",
-  "./assets/castle roof/castle roof5.png",
 ]
 
 group6 = [
+  "./assets/castle wall/castle wall0.png",
   "./assets/castle wall/castle wall1.png",
   "./assets/castle wall/castle wall2.png",
   "./assets/castle wall/castle wall3.png",
   "./assets/castle wall/castle wall4.png",
-  "./assets/castle wall/castle wall5.png",
 ]
 
 group7 = [
+  "./assets/castle base + arch/castle base + arch0.png",
   "./assets/castle base + arch/castle base + arch1.png",
   "./assets/castle base + arch/castle base + arch2.png",
   "./assets/castle base + arch/castle base + arch3.png",
   "./assets/castle base + arch/castle base + arch4.png",
-  "./assets/castle base + arch/castle base + arch5.png",
 ]
 
 group8 = [
+  "./assets/trees/trees0.png",
   "./assets/trees/trees1.png",
   "./assets/trees/trees2.png",
   "./assets/trees/trees3.png",
   "./assets/trees/trees4.png",
   "./assets/trees/trees5.png",
-  "./assets/trees/trees6.png",
 ]
 
 group9 = [
-  "./assets/birds/birds1.png",
+  "./assets/birds/birds0.png",
 ]
 
 # counter = 0
@@ -104,9 +104,11 @@ def createImage(a,b,c,d,e,f,g,h,i,counter):
   name = "merged/" + str(counter) + ".png"
   intermediate8.save(name)
 
+df = pd.DataFrame(columns=['File No.','ID'])
 count = 0
+count_miss = 0
 hash_table_dict = {}
-while count < 10000:
+while count < 10:#93750:
   a = np.random.randint(0,5,1)[0]
   b = np.random.randint(0,5,1)[0]
   c = np.random.randint(0,5,1)[0]
@@ -121,11 +123,18 @@ while count < 10000:
   if current_string not in hash_table_dict:
     hash_table_dict[current_string] = count
     createImage(a,b,c,d,e,f,g,h,i,count)
-    # counter = counter + 1
+    
+    df = df.append({'File No.': count,'ID': current_string}, ignore_index=True)
+    # df = df.append({'ID': current_string}, ignore_index=True)
+    # print(df)
+    
     count = count + 1
   else:
     print("This already f'ing exist")
-    print("ID: ", current_string, "File no.: ", hash_table_dict[current_string])
+    print("No. of repeats: ", count_miss, "ID: ", current_string, "File no.: ", hash_table_dict[current_string])
+    count_miss = count_miss + 1
+  
+df.to_csv('./minted_images.csv', index=False)
 
 # print(hash_table_dict)
 
