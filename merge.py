@@ -108,7 +108,7 @@ df = pd.DataFrame(columns=['File No.','ID'])
 count = 0
 count_miss = 0
 hash_table_dict = {}
-while count < 10:#93750:
+while count < 93750:
   a = np.random.randint(0,5,1)[0]
   b = np.random.randint(0,5,1)[0]
   c = np.random.randint(0,5,1)[0]
