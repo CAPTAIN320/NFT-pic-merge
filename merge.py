@@ -104,6 +104,21 @@ def createImage(a,b,c,d,e,f,g,h,i,counter):
   name = "merged/" + str(counter) + ".png"
   intermediate8.save(name)
 
+def createJSON(a,b,c,d,e,f,g,h,i,counter):
+  # print(a,b,c,d,e,f,g,h,i,counter)
+  first = group1[a]
+  second = group2[b]
+  third = group3[c]
+  fourth = group4[d]
+  fifth = group5[e]
+  sixth = group6[f]
+  seventh = group7[g]
+  eight = group8[h]
+  ninth = group9[i]
+
+  name = "merged/" + str(counter) + ".png"
+
+
 df = pd.DataFrame(columns=['File No.','ID'])
 count = 0
 count_miss = 0
@@ -137,19 +152,3 @@ while count < 93750:
 df.to_csv('./minted_images.csv', index=False)
 
 # print(hash_table_dict)
-
-
-# for a in range(5):
-#   for b in range(5):
-#     for c in range(5):
-#       for d in range(1):
-#         for e in range(5):
-#           for f in range(5):
-#             for g in range(5):
-#               for h in range(6):
-#                 for i in range(1):
-#                   createImage(a,b,c,d,e,f,g,h,i,counter)
-#                   counter = counter + 1
-
-
-
